@@ -6,10 +6,18 @@ console.log(menuSwitch);
 console.log(hamMenu);
 console.log(closeSwitch);
 
+// menuSwitch.addEventListener('click', function() {
+//     hamMenu.style.display = "block";
+// });
+
+// closeSwitch.addEventListener('click', function() {
+//     hamMenu.style.display = "none";
+// });
+
 menuSwitch.addEventListener('click', function() {
-    hamMenu.style.display = "block";
+    hamMenu.classList.add('active');
 });
 
 closeSwitch.addEventListener('click', function() {
-    hamMenu.style.display = "none";
+    hamMenu.classList.remove('active');
 });
